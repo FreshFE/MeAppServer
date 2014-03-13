@@ -1,0 +1,7 @@
+parameters:
+#    me_app_demo.example.class: MeApp\DemoBundle\Example
+
+services:
+#    me_app_demo.example:
+#        class: %me_app_demo.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

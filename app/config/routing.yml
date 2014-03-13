@@ -1,0 +1,4 @@
+me_app_demo:
+    resource: "@MeAppDemoBundle/Resources/config/routing.yml"
+    prefix:   /
+
