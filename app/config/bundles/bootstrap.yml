@@ -1,11 +1,2 @@
-assetic:
-    filters:
-        lessphp:
-            file: %kernel.root_dir%/../vendor/leafo/lessphp/lessc.inc.php
-            apply_to: "\.less$"
-        cssrewrite: ~
-
 braincrafted_bootstrap:
-    assets_dir: %kernel.root_dir%/../vendor/twbs/bootstrap
-    jquery_path: %kernel.root_dir%/../vendor/jquery/jquery/jquery-1.11.0.js
-    less_filter: lessphp
+    less_filter: none

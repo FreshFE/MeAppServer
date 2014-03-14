@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "dc9798cd946c499678cd45f309f893c4",
+    "hash": "f94fc6073ffa8f0813e4722dd8220938",
     "packages": [
         {
             "name": "braincrafted/bootstrap-bundle",
@@ -788,17 +788,6 @@
             "time": "2014-01-12 16:20:24"
         },
         {
-            "name": "jquery/jquery",
-            "version": "1.11.0",
-            "dist": {
-                "type": "file",
-                "url": "http://code.jquery.com/jquery-1.11.0.min.js",
-                "reference": null,
-                "shasum": null
-            },
-            "type": "library"
-        },
-        {
             "name": "knplabs/knp-components",
             "version": "1.2.5",
             "source": {
@@ -988,47 +977,6 @@
                 "minification"
             ],
             "time": "2013-07-19 00:03:27"
-        },
-        {
-            "name": "leafo/lessphp",
-            "version": "v0.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/leafo/lessphp.git",
-                "reference": "51f3f06f0fe78a722dabfd14578444bdd078d9de"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/leafo/lessphp/zipball/51f3f06f0fe78a722dabfd14578444bdd078d9de",
-                "reference": "51f3f06f0fe78a722dabfd14578444bdd078d9de",
-                "shasum": ""
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.3-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "lessc.inc.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT",
-                "GPL-3.0"
-            ],
-            "authors": [
-                {
-                    "name": "Leaf Corcoran",
-                    "email": "leafot@gmail.com",
-                    "homepage": "http://leafo.net"
-                }
-            ],
-            "description": "lessphp is a compiler for LESS written in PHP.",
-            "homepage": "http://leafo.net/lessphp/",
-            "time": "2013-08-09 17:09:19"
         },
         {
             "name": "monolog/monolog",
@@ -1684,48 +1632,6 @@
                 "framework"
             ],
             "time": "2014-02-12 19:27:03"
-        },
-        {
-            "name": "twbs/bootstrap",
-            "version": "v3.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "6d03173a1aad98e75f7d33e65b411c519176c59a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/6d03173a1aad98e75f7d33e65b411c519176c59a",
-                "reference": "6d03173a1aad98e75f7d33e65b411c519176c59a",
-                "shasum": ""
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.0.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "Jacob Thornton",
-                    "email": "jacobthornton@gmail.com"
-                },
-                {
-                    "name": "Mark Otto",
-                    "email": "markdotto@gmail.com"
-                }
-            ],
-            "description": "Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.",
-            "homepage": "http://getbootstrap.com",
-            "keywords": [
-                "bootstrap",
-                "css"
-            ],
-            "time": "2013-12-05 16:09:10"
         },
         {
             "name": "twig/extensions",
