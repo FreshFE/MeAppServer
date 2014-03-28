@@ -3,6 +3,7 @@ imports:
     - { resource: security.yml }
     - { resource: bundles/bootstrap.yml }
     - { resource: bundles/sonata.yml }
+    - { resource: @AcmeDemoBundle/Resources/config/admin.xml }
 
 framework:
     #esi:             ~

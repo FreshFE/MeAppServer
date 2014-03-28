@@ -1,5 +1,8 @@
 sonata_block:
     default_contexts: [cms]
     blocks:
-        sonata.admin.block_admin_list:
+        sonata.admin.block.admin_list:
             contexts: [admin]
+
+sonata_admin:
+    title: Acme Demo Bundle
