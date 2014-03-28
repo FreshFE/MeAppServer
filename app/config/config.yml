@@ -1,7 +1,8 @@
 imports:
-    - { resource: bundles/bootstrap.yml }
     - { resource: parameters.yml }
     - { resource: security.yml }
+    - { resource: bundles/bootstrap.yml }
+    - { resource: bundles/sonata.yml }
 
 framework:
     #esi:             ~
