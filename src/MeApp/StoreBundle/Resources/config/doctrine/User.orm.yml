@@ -1,0 +1,10 @@
+MeApp\StoreBundle\Entity\User:
+    type: entity
+    table: user
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    lifecycleCallbacks: {  }
