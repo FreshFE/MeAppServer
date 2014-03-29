@@ -4,6 +4,11 @@ product_index:
     defaults:
         _controller: MeAppProductBundle:Product:index
 
+product_new:
+    pattern: /app/new
+    defaults:
+        _controller: MeAppProductBundle:ProductForm:new
+
 product_show:
     pattern: /app/{productId}
     defaults:
