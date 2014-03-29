@@ -22,6 +22,7 @@ class AppKernel extends Kernel
 
             new MeApp\DemoBundle\MeAppDemoBundle(),
             new MeApp\StoreBundle\MeAppStoreBundle(),
+            new MeApp\UserBundle\MeAppUserBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
