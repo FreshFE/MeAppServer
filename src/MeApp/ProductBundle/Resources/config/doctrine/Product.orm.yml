@@ -1,0 +1,22 @@
+MeApp\ProductBundle\Entity\Product:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+        content:
+            type: text
+        createAt:
+            type: datetime
+            column: create_at
+        updateAt:
+            type: datetime
+            column: update_at
+    lifecycleCallbacks: {  }
