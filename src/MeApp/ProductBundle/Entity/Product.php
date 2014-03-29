@@ -15,6 +15,11 @@ class Product
     private $id;
 
     /**
+     * @var object
+     */
+    private $user;
+
+    /**
      * @var string
      */
     private $name;
@@ -34,6 +39,23 @@ class Product
      */
     private $updateAt;
 
+
+    /**
+     * 持久化时自动创建时间
+     */
+    public function setAtOnPrePersist()
+    {
+        $this->setCreateAt(new DateTime());
+        $this->setUpdateAt(new DateTime());
+    }
+
+    /**
+     * 更新资料时自动更新时间
+     */
+    public function setAtOnPreUpdate()
+    {
+        $this->setUpdateAt(new DateTime());
+    }
 
     /**
      * Get id
@@ -135,5 +157,28 @@ class Product
     public function getUpdateAt()
     {
         return $this->updateAt;
+    }
+
+    /**
+     * Set user
+     *
+     * @param \MeApp\UserBundle\Entity\User $user
+     * @return Product
+     */
+    public function setUser(\MeApp\UserBundle\Entity\User $user = null)
+    {
+        $this->user = $user;
+
+        return $this;
+    }
+
+    /**
+     * Get user
+     *
+     * @return \MeApp\UserBundle\Entity\User 
+     */
+    public function getUser()
+    {
+        return $this->user;
     }
 }

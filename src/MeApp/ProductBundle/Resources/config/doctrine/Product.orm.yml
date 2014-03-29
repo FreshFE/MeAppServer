@@ -1,6 +1,6 @@
 MeApp\ProductBundle\Entity\Product:
     type: entity
-    table: null
+    table: product
     id:
         id:
             type: integer
@@ -19,4 +19,16 @@ MeApp\ProductBundle\Entity\Product:
         updateAt:
             type: datetime
             column: update_at
-    lifecycleCallbacks: {  }
+
+    manyToOne:
+        user:
+            targetEntity: MeApp\UserBundle\Entity\User
+            joinColumn:
+                name: user_id
+                referencedColumnName: id
+
+    lifecycleCallbacks:
+        prePersist:
+            - setAtOnPrePersist
+        preUpdate:
+            - setAtOnPreUpdate
