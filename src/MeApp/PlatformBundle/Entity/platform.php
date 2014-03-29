@@ -15,6 +15,11 @@ class platform
     private $id;
 
     /**
+     * @var MeApp\ProductBundle\Entity\Product
+     */
+    private $products;
+
+    /**
      * @var string
      */
     private $name;
@@ -51,5 +56,45 @@ class platform
     public function getName()
     {
         return $this->name;
+    }
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->products = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Add products
+     *
+     * @param \MeApp\ProductBundle\Entity\Product $products
+     * @return platform
+     */
+    public function addProduct(\MeApp\ProductBundle\Entity\Product $products)
+    {
+        $this->products[] = $products;
+
+        return $this;
+    }
+
+    /**
+     * Remove products
+     *
+     * @param \MeApp\ProductBundle\Entity\Product $products
+     */
+    public function removeProduct(\MeApp\ProductBundle\Entity\Product $products)
+    {
+        $this->products->removeElement($products);
+    }
+
+    /**
+     * Get products
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getProducts()
+    {
+        return $this->products;
     }
 }

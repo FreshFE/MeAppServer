@@ -26,6 +26,12 @@ MeApp\ProductBundle\Entity\Product:
             joinColumn:
                 name: user_id
                 referencedColumnName: id
+        platform:
+            targetEntity: MeApp\PlatformBundle\Entity\Platform
+            inversedBy: products
+            joinColumn:
+                name: product_id
+                referencedColumnName: id
 
     lifecycleCallbacks:
         prePersist:

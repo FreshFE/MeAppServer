@@ -15,9 +15,14 @@ class Product
     private $id;
 
     /**
-     * @var object
+     * @var MeApp\UserBundle\Entity\User
      */
     private $user;
+
+    /**
+     * @var MeApp\PlatformBundle\Entity\Platform
+     */
+    private $platform;
 
     /**
      * @var string
@@ -180,5 +185,28 @@ class Product
     public function getUser()
     {
         return $this->user;
+    }
+
+    /**
+     * Set platform
+     *
+     * @param \MeApp\PlatformBundle\Entity\Platform $platform
+     * @return Product
+     */
+    public function setPlatform(\MeApp\PlatformBundle\Entity\Platform $platform = null)
+    {
+        $this->platform = $platform;
+
+        return $this;
+    }
+
+    /**
+     * Get platform
+     *
+     * @return \MeApp\PlatformBundle\Entity\Platform 
+     */
+    public function getPlatform()
+    {
+        return $this->platform;
     }
 }
