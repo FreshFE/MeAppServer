@@ -18,11 +18,14 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
 
             new Braincrafted\Bundle\BootstrapBundle\BraincraftedBootstrapBundle(),
+            new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
             new FOS\UserBundle\FOSUserBundle(),
 
             new MeApp\DemoBundle\MeAppDemoBundle(),
-            new MeApp\StoreBundle\MeAppStoreBundle(),
             new MeApp\UserBundle\MeAppUserBundle(),
+            new MeApp\ProductBundle\MeAppProductBundle(),
+            new MeApp\PlatformBundle\MeAppPlatformBundle(),
+            new MeApp\CoreBundle\MeAppCoreBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

@@ -1,0 +1,9 @@
+parameters:
+#    me_app_product.example.class: MeApp\ProductBundle\Example
+
+services:
+    app.db.product:
+        class: MeApp\CoreBundle\EntityManager\BaseManager
+        arguments: 
+            - @doctrine.orm.entity_manager
+            - MeApp\ProductBundle\Entity\Product

@@ -1,0 +1,20 @@
+MeApp\PlatformBundle\Entity\platform:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+
+    oneToMany:
+        products:
+            targetEntity: MeApp\ProductBundle\Entity\Product
+            mappedBy: platform
+
+    lifecycleCallbacks: {  }
