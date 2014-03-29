@@ -1,3 +1,7 @@
+me_app_product:
+    resource: "@MeAppProductBundle/Resources/config/routing.yml"
+    prefix:   /
+
 me_app_user:
     resource: "@MeAppUserBundle/Resources/config/routing.yml"
     prefix:   /
