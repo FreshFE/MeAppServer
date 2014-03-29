@@ -1,6 +1,6 @@
 <?php
 
-namespace MeApp\StoreBundle\Entity;
+namespace MeApp\UserBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use FOS\UserBundle\Entity\User as BaseUser;
