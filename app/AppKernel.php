@@ -21,7 +21,6 @@ class AppKernel extends Kernel
             new FOS\UserBundle\FOSUserBundle(),
 
             new MeApp\DemoBundle\MeAppDemoBundle(),
-            new MeApp\StoreBundle\MeAppStoreBundle(),
             new MeApp\UserBundle\MeAppUserBundle(),
         );
 

@@ -2,10 +2,6 @@ me_app_user:
     resource: "@MeAppUserBundle/Resources/config/routing.yml"
     prefix:   /
 
-me_app_store:
-    resource: "@MeAppStoreBundle/Resources/config/routing.yml"
-    prefix:   /
-
 me_app_demo:
     resource: "@MeAppDemoBundle/Resources/config/routing.yml"
     prefix:   /
