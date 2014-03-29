@@ -20,7 +20,10 @@ class ProductController extends BaseController
             ->find($productId);
 
     	return $this->render(
-                $this->buildTemplate('Product:index')
+                $this->buildTemplate('Product:show'),
+                array(
+                    'product' => $product
+                    )
             );
     }
 
