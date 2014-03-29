@@ -30,7 +30,7 @@ MeApp\ProductBundle\Entity\Product:
             targetEntity: MeApp\PlatformBundle\Entity\Platform
             inversedBy: products
             joinColumn:
-                name: product_id
+                name: platform_id
                 referencedColumnName: id
 
     lifecycleCallbacks:
