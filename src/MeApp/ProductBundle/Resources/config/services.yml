@@ -5,3 +5,8 @@ services:
 #    me_app_product.example:
 #        class: %me_app_product.example.class%
 #        arguments: [@service_id, "plain_value", %parameter%]
+    manager.product:
+        class: MeApp\ProductBundle\EntityManager\ProductManager
+        arguments: 
+            - @doctrine.orm.entity_manager
+            - "MeAppProductBundle:Product"
