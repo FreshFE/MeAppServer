@@ -6,4 +6,4 @@ services:
         class: MeApp\CoreBundle\EntityManager\BaseManager
         arguments: 
             - @doctrine.orm.entity_manager
-            - "MeAppProductBundle:Product"
+            - MeApp\ProductBundle\Entity\Product
