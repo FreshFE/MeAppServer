@@ -3,6 +3,7 @@
 namespace MeApp\ProductBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use DateTime;
 
 /**
  * Product
