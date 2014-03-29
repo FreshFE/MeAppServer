@@ -1,3 +1,8 @@
-me_app_product_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: MeAppProductBundle:Default:index }
+
+index:
+    pattern: /apps
+    defaults: { _controller: MeAppProductBundle:Product:index }
+
+show:
+    pattern: /app/{productId}
+    defaults: { _controller: MeAppProductBundle:Product:show }
