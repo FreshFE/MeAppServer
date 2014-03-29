@@ -1,10 +1,10 @@
 
-index:
+product_index:
     pattern: /apps
     defaults:
         _controller: MeAppProductBundle:Product:index
 
-show:
+product_show:
     pattern: /app/{productId}
     defaults:
         _controller: MeAppProductBundle:Product:show

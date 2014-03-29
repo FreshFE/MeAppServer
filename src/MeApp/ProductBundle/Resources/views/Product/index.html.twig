@@ -4,4 +4,10 @@
 
 {% block body %}
 <h1>Welcome to the Product:index page</h1>
+
+<ul>
+	{% for product in products %}
+	<li><a href="{{ path('product_show', { productId: product.id }) }}">{{ product.name }}</a></li>
+	{% endfor %}
+</ul>
 {% endblock %}

@@ -10,6 +10,24 @@ class ProductController extends BaseController
 
     public function indexAction()
     {
+        $qb = $this
+            ->get('app.db.product')
+            ->getRepository()
+            ->createQueryBuilder('Product');
+
+        $products = $this
+            ->get('knp_paginator')->paginate(
+                $qb,
+                $this->getRequest()->get('page', 1),
+                10
+            );
+
+        return $this->render(
+                $this->buildTemplate('Product:index'),
+                array(
+                    'products' => $products
+                    )
+            );
     }
 
     public function showAction($productId)
