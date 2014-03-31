@@ -13,3 +13,8 @@ product_show:
     pattern: /app/{productId}
     defaults:
         _controller: MeAppProductBundle:Product:show
+
+product_new:
+    pattern: /app/{productId}/edit
+    defaults:
+        _controller: MeAppProductBundle:ProductForm:edit

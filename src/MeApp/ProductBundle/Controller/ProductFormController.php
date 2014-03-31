@@ -20,6 +20,16 @@ class ProductFormController extends BaseController
 		return $this->handleForm($product);
 	}
 
+	public function editAction($productId)
+	{
+		$product = $this
+			->get('app.db.product')
+			->getRepository()
+			->find($productId);
+
+		return $this->handleForm($product);
+	}
+
 	protected function handleForm($entity)
 	{
 		$form = $this
