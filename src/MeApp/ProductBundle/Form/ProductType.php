@@ -17,6 +17,10 @@ class ProductType extends AbstractType
         $builder
             ->add('name')
             ->add('content')
+            ->add('platform', 'entity', array(
+                    'class' => 'MeAppPlatformBundle:Platform',
+                    'property' => 'name'
+                ))
             ->add('save', 'submit')
         ;
     }
