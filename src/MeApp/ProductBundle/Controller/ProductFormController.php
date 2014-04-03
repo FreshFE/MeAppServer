@@ -2,10 +2,10 @@
 
 namespace MeApp\ProductBundle\Controller;
 
-use MeApp\CoreBundle\Controller\BaseController;
+use MeApp\CoreBundle\Controller\FormController;
 use MeApp\ProductBundle\Form\ProductType;
 
-class ProductFormController extends BaseController
+class ProductFormController extends FormController
 {
 	protected $bundleName = 'MeAppProductBundle';
 
@@ -17,7 +17,7 @@ class ProductFormController extends BaseController
 
 		$product->setUser($this->getUser());
 
-		return $this->handleForm($product);
+		return $this->handleForm($product, new ProductType(), $this->getRequest());
 	}
 
 	public function editAction($productId)
@@ -27,34 +27,6 @@ class ProductFormController extends BaseController
 			->getRepository()
 			->find($productId);
 
-		return $this->handleForm($product);
-	}
-
-	protected function handleForm($entity)
-	{
-		$form = $this
-			->createForm(new ProductType(), $entity)
-			->handleRequest($this->getRequest());
-
-		if ($form->isValid()) {
-
-		    // 写入数据库
-		    $em = $this
-		    	->getDoctrine()
-		    	->getManager();
-		    $em->persist($entity);
-		    $em->flush();
-
-		    return $this->redirect(
-		    		$this->generateUrl('product_index')
-		    	);
-		}
-
-		return $this->render(
-				$this->buildTemplate('Product:new'),
-				array(
-					'form' => $form->createView()
-					)
-			);
+		return $this->handleForm($product, new ProductType(), $this->getRequest());
 	}
 }
