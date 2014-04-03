@@ -14,7 +14,7 @@ product_show:
     defaults:
         _controller: MeAppProductBundle:Product:show
 
-product_new:
+product_edit:
     pattern: /app/{productId}/edit
     defaults:
         _controller: MeAppProductBundle:ProductForm:edit
